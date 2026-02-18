@@ -476,6 +476,9 @@ export interface CreateRateRequest {
   effectiveEndDate?: string;
 }
 
+export type CreateCommissionRateRequest = CreateRateRequest;
+export type UpdateCommissionRateRequest = Partial<CreateRateRequest>;
+
 // ============================================================================
 // Dashboard Types
 // ============================================================================

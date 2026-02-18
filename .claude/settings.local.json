@@ -4,7 +4,17 @@
       "Bash(dir:*)",
       "Bash(npm install:*)",
       "Bash(npx tsc:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(powershell -Command \"cd ''E:\\\\Spark\\\\SparkProFrontend''; git add src/lib/api/profile.ts; git commit -m ''fix: add getReferrals to profileApi''; git push origin main 2>&1\")",
+      "Bash(powershell -Command \"cd ''E:\\\\Spark\\\\SparkProFrontend''; git add src/types/index.ts; git commit -m ''fix: add CreateCommissionRateRequest and UpdateCommissionRateRequest type aliases''; git push origin main 2>&1\")",
+      "Bash(ls:*)",
+      "Bash(powershell -Command \"cd ''E:\\\\Spark\\\\SparkProFrontend''; git add src/hooks/use-rates.ts; git commit -m ''fix: lowercase Industry to IndustrySlug in use-rates hook''; git push origin main 2>&1\")",
+      "Bash(powershell -Command \"cd ''E:\\\\Spark\\\\SparkProFrontend''; npm install -D @cloudflare/next-on-pages wrangler 2>&1 | tail -5\")",
+      "Bash(powershell -Command \"cd ''E:\\\\Spark\\\\SparkProFrontend''; npm install -D @cloudflare/next-on-pages wrangler 2>&1\")",
+      "Bash(powershell -Command \"cd ''E:\\\\Spark\\\\SparkProFrontend''; npm install next@latest @cloudflare/next-on-pages wrangler 2>&1 | tail -15\")",
+      "Bash(powershell -Command \"cd ''E:\\\\Spark\\\\SparkProFrontend''; npm install next@latest @cloudflare/next-on-pages wrangler 2>&1\")",
+      "Bash(powershell -Command \"cd 'E:\\\\Spark\\\\SparkProFrontend'; npm install:*)",
+      "Bash(powershell -Command \"cd ''E:\\\\Spark\\\\SparkProFrontend''; git add wrangler.toml next.config.mjs package.json package-lock.json; git commit -m ''chore: add Cloudflare next-on-pages adapter, upgrade Next.js to 15.5.2''; git push origin main 2>&1\")"
     ]
   }
 }

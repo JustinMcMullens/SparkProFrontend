@@ -1,6 +1,8 @@
 import { apiClient } from './client';
 import type {
   ApiResponse,
+  User,
+  UpdateProfileRequest,
   Employee,
   OrgUser,
   CommissionSummary,
@@ -9,6 +11,14 @@ import type {
   PayrollDealWithParticipants,
   Company,
 } from '@/types';
+
+export async function getProfile(userId: number): Promise<User> {
+  return apiClient.get<User>(`/api/user/${userId}`);
+}
+
+export async function updateProfile(userId: number, data: UpdateProfileRequest): Promise<User> {
+  return apiClient.put<User>(`/api/user/${userId}`, data);
+}
 
 export async function getUserCompanies(userId: number): Promise<{
   userId: number;

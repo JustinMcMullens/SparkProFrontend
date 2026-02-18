@@ -120,6 +120,13 @@ export interface User {
   createdAt: string;
 }
 
+export interface UpdateProfileRequest {
+  firstName?: string;
+  lastName?: string;
+  email?: string;
+  phone?: string;
+}
+
 export interface Employee {
   userId: number;
   firstName: string;

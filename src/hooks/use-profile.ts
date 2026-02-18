@@ -23,11 +23,7 @@ export function useUpdateProfile(userId: number) {
 export function useUploadProfileImage(userId: number) {
   const queryClient = useQueryClient();
   return useMutation({
-    mutationFn: (file: File) => {
-      const formData = new FormData();
-      formData.append('file', file);
-      return profileApi.uploadProfileImage(userId, formData);
-    },
+    mutationFn: (file: File) => profileApi.uploadProfileImage(userId, file, 'profile'),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['profile', userId] });
     },

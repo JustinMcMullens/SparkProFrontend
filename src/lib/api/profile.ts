@@ -40,6 +40,10 @@ export async function getPayrollDeals(userId: number): Promise<PayrollDealWithPa
   return apiClient.get<PayrollDealWithParticipants[]>(`/payroll/${userId}`);
 }
 
+export async function getReferrals(userId: number): Promise<Employee[]> {
+  return apiClient.get<Employee[]>(`/referrals/${userId}`);
+}
+
 export async function getOrgUsers(requesterUserId: number): Promise<OrgUser[]> {
   return apiClient.get<OrgUser[]>(`/org/users/${requesterUserId}`);
 }
